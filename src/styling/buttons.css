@@ -1,0 +1,16 @@
+.button {
+    background-color: cadetblue;
+    box-shadow: gray 5px 5px;
+    padding: 1em 2em;
+    border-radius: 500px;
+    color: #fff;
+    font-size: larger;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.button:active {
+    box-shadow: none;
+    transform: translateY(3px);
+}

@@ -1,0 +1,12 @@
+.answers {
+    display: flex;
+    margin: auto;
+    align-items: center;
+    padding: .5em;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.answers:hover {
+   font-weight: bold;
+}
