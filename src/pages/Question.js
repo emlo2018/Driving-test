@@ -21,7 +21,7 @@ export const Question = () => {
         <section className="question-container">
             <Countdown
                 style={{ fontSize: 20 }}
-                date={startTime + 60000}
+                date={startTime + 120000}
                 intervalDelay={0}
                 precision={3}
                 onComplete={() => history.push('/summary')} />

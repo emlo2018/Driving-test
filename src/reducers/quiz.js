@@ -1,6 +1,5 @@
 import { createSlice } from '@reduxjs/toolkit'
 
-// Change these to your own questions!
 const questions = [
   { id: 1, questionText: 'Vad är sant angående avfarter från motorvägar?', options: ['Avfarten ligger alltid på vänster sida.', 'Avfarten kan ligga på antingen höger eller vänster sida.', 'Avfarten ligger alltid på höger sida.'], correctAnswerIndex: 2 },
   { id: 2, questionText: 'Vad är sant angående slitna däck med dåligt mönsterdjup?', options: ['Slitna däck fungerar bättre än nya däck i regn, men sämre under normala förhållanden.', 'Slitna däck fungerar extra dåligt i regn.', 'När det regnar är det ingen skillnad mellan greppnivån i slitna och nya däck.'], correctAnswerIndex: 1 },
@@ -48,7 +47,8 @@ export const quiz = createSlice({
       }
 
       if (question.options[answerIndex] === undefined) {
-        throw new Error(`You passed answerIndex ${answerIndex}, but it is not in the possible answers array!`)
+        //throw new Error(`You passed answerIndex ${answerIndex}, but it is not in the possible answers array!`)
+        console.error()
       }
 
       state.answers.push({
