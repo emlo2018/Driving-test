@@ -22,7 +22,7 @@ export const Summary = () => {
   return (
     <div>
       <h1>You answered {rightAnswers.length} right out of {answers.length} questions!</h1>
-      <button className="button" onClick={handleRestart} >Again!!!</button>
+      <button className="button" onClick={handleRestart} >Do the test again</button>
     </div>
   )
 }
